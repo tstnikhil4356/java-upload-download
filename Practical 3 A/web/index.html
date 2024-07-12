@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <div>Practical 3A</div>
+        
+         <h1> File Uploading Application</h1>
+        <form action="FileuploadServlet" method="post" enctype="multipart/form-data">
+            Select File to Upload: <input type="file" name="myfile"><br><br>
+            Destination:<input type="text" name="destination"><br><br>
+            <input type="submit" value="Upload file" name="Upload">
+            
+        </form>
+        
+        
+        
+         <h1> File Downloading Application</h1>
+        <form action="FileDownloadServlet" method="post" enctype="multipart/form-data">
+             
+            click<a href="FileDownloadServlet?filename=B1.pdf">b1.project</a>   
+            <br><br>
+            
+            click<a href="FileDownloadServlet?filename=a1.pdf">a1.project</a>  
+            
+        </form>
+        
+    </body>
+</html>
